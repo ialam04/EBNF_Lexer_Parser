@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ibrahim/RiderProjects/LexerParser/LexerParser/LexerParser.csproj": {}
+    "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/LexerParser.csproj": {}
   },
   "projects": {
-    "/Users/ibrahim/RiderProjects/LexerParser/LexerParser/LexerParser.csproj": {
+    "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/LexerParser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ibrahim/RiderProjects/LexerParser/LexerParser/LexerParser.csproj",
+        "projectUniqueName": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/LexerParser.csproj",
         "projectName": "LexerParser",
-        "projectPath": "/Users/ibrahim/RiderProjects/LexerParser/LexerParser/LexerParser.csproj",
+        "projectPath": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/LexerParser.csproj",
         "packagesPath": "/Users/ibrahim/.nuget/packages/",
-        "outputPath": "/Users/ibrahim/RiderProjects/LexerParser/LexerParser/obj/",
+        "outputPath": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ibrahim/.nuget/NuGet/NuGet.Config"
