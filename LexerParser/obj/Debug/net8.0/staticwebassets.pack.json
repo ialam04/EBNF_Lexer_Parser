@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/projectbundle/LexerParser.bundle.scp.css",
+      "Id": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/projectbundle/LexerParser.bundle.scp.css",
       "PackagePath": "staticwebassets/LexerParser.bundle.scp.css"
     },
     {
-      "Id": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/app.css",
+      "Id": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },
     {
-      "Id": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/bootstrap/bootstrap.min.css",
+      "Id": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/bootstrap/bootstrap.min.css.map",
+      "Id": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/bootstrap/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/favicon.png",
+      "Id": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },
     {

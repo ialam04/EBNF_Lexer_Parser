@@ -1,0 +1,7 @@
+/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/bin/Release/net8.0/publish/LexerParser
+/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/bin/Release/net8.0/publish/appsettings.json
+/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/bin/Release/net8.0/publish/LexerParser.dll
+/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/bin/Release/net8.0/publish/LexerParser.deps.json
+/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/bin/Release/net8.0/publish/LexerParser.runtimeconfig.json
+/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/bin/Release/net8.0/publish/LexerParser.pdb

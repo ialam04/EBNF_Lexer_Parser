@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/obj/Release/net8.0/scopedcss/projectbundle/LexerParser.bundle.scp.css",
+      "PackagePath": "staticwebassets/LexerParser.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.LexerParser.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.build.LexerParser.props",
+      "PackagePath": "build\\LexerParser.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.buildMultiTargeting.LexerParser.props",
+      "PackagePath": "buildMultiTargeting\\LexerParser.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.buildTransitive.LexerParser.props",
+      "PackagePath": "buildTransitive\\LexerParser.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

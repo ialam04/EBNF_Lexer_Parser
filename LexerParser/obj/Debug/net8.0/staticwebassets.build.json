@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QtpZx6UyuaTVp1M+QXlnKizy8+NcrrCNTq9694jetoY=",
+  "Hash": "K01uY2r8YqpyNnGBuZwq3Yv7N2YdcsoKWw0eXDRANP0=",
   "Source": "LexerParser",
   "BasePath": "_content/LexerParser",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "LexerParser/wwwroot",
       "Source": "LexerParser",
-      "ContentRoot": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/",
+      "ContentRoot": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/",
       "BasePath": "_content/LexerParser",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/bundle/LexerParser.styles.css",
+      "Identity": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/bundle/LexerParser.styles.css",
       "SourceId": "LexerParser",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/LexerParser",
       "RelativePath": "LexerParser.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/bundle/LexerParser.styles.css"
+      "OriginalItemSpec": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/bundle/LexerParser.styles.css"
     },
     {
-      "Identity": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/projectbundle/LexerParser.bundle.scp.css",
+      "Identity": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/projectbundle/LexerParser.bundle.scp.css",
       "SourceId": "LexerParser",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/LexerParser",
       "RelativePath": "LexerParser.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/projectbundle/LexerParser.bundle.scp.css"
+      "OriginalItemSpec": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/obj/Debug/net8.0/scopedcss/projectbundle/LexerParser.bundle.scp.css"
     },
     {
-      "Identity": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/app.css",
+      "Identity": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/app.css",
       "SourceId": "LexerParser",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/",
+      "ContentRoot": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/",
       "BasePath": "_content/LexerParser",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot/app.css"
     },
     {
-      "Identity": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/bootstrap/bootstrap.min.css",
+      "Identity": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/bootstrap/bootstrap.min.css",
       "SourceId": "LexerParser",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/",
+      "ContentRoot": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/",
       "BasePath": "_content/LexerParser",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/bootstrap/bootstrap.min.css.map",
+      "Identity": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/bootstrap/bootstrap.min.css.map",
       "SourceId": "LexerParser",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/",
+      "ContentRoot": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/",
       "BasePath": "_content/LexerParser",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/favicon.png",
+      "Identity": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/favicon.png",
       "SourceId": "LexerParser",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/wwwroot/",
+      "ContentRoot": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/wwwroot/",
       "BasePath": "_content/LexerParser",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

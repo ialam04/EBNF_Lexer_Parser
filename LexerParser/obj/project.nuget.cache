@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GWI2wWkMvi8H9kXtaci4cR8WrJVbmAeS6QOZ8dI3Q+wQdRv/iMcqLnNkOboLtAo5xW2GCNxUnOIHEZ5d1O7Jfw==",
+  "dgSpecHash": "Za52kHVyKVvEyurSWKSPTNOURY+2YTfH2AA/KxY3g3AfXefEdk/u7e9uw90bRNvm41cXsAuhL5a2ewp2zR4miA==",
   "success": true,
-  "projectFilePath": "/Users/ibrahim/Documents/GitHub/EBNFParser/LexerParser/LexerParser.csproj",
+  "projectFilePath": "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/LexerParser.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
