@@ -1,0 +1,27 @@
+<program> ::= "program" <statements> "end_program"
+
+<statements> ::= <statement> | <statement> <statements>
+
+<statement> ::= <assignment> ";" | <if_statement> | <loop>
+
+<assignment> ::= <identifier> "=" <expression>
+
+<expression> ::= <term> | <expression> "+" <term> | <expression> "-" <term>
+
+<term> ::= <factor> | <term> "*" <factor> | <term> "/" <factor> | <term> "%" <factor>
+
+<factor> ::= <number> | "(" <expression> ")" | <identifier>
+
+<number> ::= digit+
+
+<identifier> ::= letter (letter | digit)*
+
+<if_statement> ::= "if" "(" <logic_expression> ")" <statements> "end_if"
+
+<logic_expression> ::= <var> <logic_operator> <var>
+
+<logic_operator> ::= "==" | "!=" | ">" | "<" | ">=" | "<="
+
+<var> ::= <identifier>
+
+<loop> ::= "loop" "(" <var> "=" <var> ":" <var> ")" <statements> "end_loop"

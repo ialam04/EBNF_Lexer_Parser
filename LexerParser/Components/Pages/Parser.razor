@@ -1,0 +1,56 @@
+﻿@page "/parser"
+@rendermode InteractiveServer
+
+@using ProgrammingLanguagesProject.Components
+
+<PageTitle>Parser</PageTitle>
+
+<h1>Parse Your Code</h1>
+
+@code {
+    public string InputText = "";
+}
+
+<textarea @bind="InputText" rows="10" cols="50" style="width:100%;"></textarea>
+<button @onclick="Parse">Parse</button>
+
+@if (Tokens != null)
+{
+    <h3>Tokens:</h3>
+    <ul>
+        @foreach (var token in Tokens)
+        {
+            <li>@token.Type: "@token.Value"</li>
+        }
+    </ul>
+}
+
+@if (!string.IsNullOrEmpty(ResultMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @ResultMessage
+    </div>
+}
+
+@code {
+    
+    public List<Token> Tokens;
+    public string ResultMessage = "";
+    public void Parse()
+    {
+        Lexer lexer = new Lexer(InputText);
+        Tokens = lexer.Tokenize().ToList();
+        LexParser parser = new LexParser(Tokens);
+        try
+        {
+            parser.Parse();
+            ResultMessage = "Parsing successful!";
+        }
+        catch (Exception e)
+        {
+            ResultMessage = e.Message;
+        }
+    }
+    
+    
+}
