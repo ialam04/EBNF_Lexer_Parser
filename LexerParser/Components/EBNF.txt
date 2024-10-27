@@ -1,3 +1,5 @@
+EBNF for the language:
+
 <program> ::= "program" <statements> "end_program"
 
 <statements> ::= <statement> | <statement> <statements>
@@ -22,6 +24,6 @@
 
 <logic_operator> ::= "==" | "!=" | ">" | "<" | ">=" | "<="
 
-<var> ::= <identifier>
+<var> ::= <identifier> | <number>
 
 <loop> ::= "loop" "(" <var> "=" <var> ":" <var> ")" <statements> "end_loop"

@@ -1,7 +1,30 @@
 ﻿@page "/"
-@using ProgrammingLanguagesProject.Components
+@using System.IO
+@inject IWebHostEnvironment Environment
 
-<PageTitle>Home</PageTitle>
+<PageTitle>LexerParse</PageTitle>
 
-<h1>Programming Language Lexer and Parser</h1>
+<h1>Lexer and Parser</h1>
 
+@if (!string.IsNullOrEmpty(fileContent))
+{
+    <pre><code>@fileContent</code></pre>
+}
+else
+{
+    <p>File content could not be loaded.</p>
+}
+
+@code {
+    private string fileContent;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var filePath = Path.Combine(Environment.ContentRootPath, "/Users/ibrahim/RiderProjects/EBNFParser/LexerParser/Components/", "EBNF.txt");
+
+        if (File.Exists(filePath))
+        {
+            fileContent = await File.ReadAllTextAsync(filePath);
+        }
+    }
+}

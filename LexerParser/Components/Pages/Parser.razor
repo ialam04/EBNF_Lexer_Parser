@@ -11,8 +11,17 @@
     public string InputText = "";
 }
 
-<textarea @bind="InputText" rows="10" cols="50" style="width:100%;"></textarea>
+<textarea @bind="InputText" rows="20" cols="20" style="width:50%;"></textarea>
 <button @onclick="Parse">Parse</button>
+<br />
+<br />
+
+@if (!string.IsNullOrEmpty(ResultMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @ResultMessage
+    </div>
+}
 
 @if (Tokens != null)
 {
@@ -23,13 +32,6 @@
             <li>@token.Type: "@token.Value"</li>
         }
     </ul>
-}
-
-@if (!string.IsNullOrEmpty(ResultMessage))
-{
-    <div class="alert alert-danger" role="alert">
-        @ResultMessage
-    </div>
 }
 
 @code {
@@ -51,6 +53,5 @@
             ResultMessage = e.Message;
         }
     }
-    
     
 }

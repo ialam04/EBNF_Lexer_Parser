@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices.JavaScript;
 using System.Text.RegularExpressions;
+using System.Text;
 
 namespace ProgrammingLanguagesProject.Components
 {
@@ -35,8 +36,6 @@ namespace ProgrammingLanguagesProject.Components
         Colon, // ":"
         EOF, // End of file/input
         Invalid,
-        InvalidStart,
-        InvalidEnd,
         InvalidOp
     }
 
@@ -56,43 +55,43 @@ namespace ProgrammingLanguagesProject.Components
     
     public class Lexer
     {
-        public string Input { get; private set; }
-        private int _index = 0;
-        private List<Token> _tokens = new List<Token>();
+        public string Input { get; private set; } // Input string
+        private int _index = 0; // Current index in the input string
+        private List<Token> _tokens = new List<Token>();  // List of tokens
 
         public Lexer(string input)
         {
-            Input = input;
-            _index = 0;
-            _tokens = new List<Token>();
+            Input = input; // Set input string
+            _index = 0; // Set index to 0
+            _tokens = new List<Token>(); // Initialize list of tokens
         }
 
         public IEnumerable<Token> Tokenize()
         {
 
-            while (_index < Input.Length - 1)
+            while (_index < Input.Length) // Loop through the input string
             {
                 
-                if (char.IsWhiteSpace(Input[_index]))
+                if (char.IsWhiteSpace(Input[_index])) // Skip whitespace
                 {
-                    _index++;
+                    _index++; // Move to the next character
                 }
                 
-                else if (_index >= Input.Length)
+                else if (_index >= Input.Length) // End of input
                 {
-                    _tokens.Add(new Token(TokenType.EOF, ""));
-                    break;
+                    _tokens.Add(new Token(TokenType.EOF, "")); // Add EOF token
+                    break; // Break the loop
                 }
 
-                else if (_index < Input.Length && char.IsLetter(Input[_index]))
+                else if (_index < Input.Length && char.IsLetter(Input[_index])) // Check if the character is a letter
                 {
                     LexKeywordOrIdentifier();
                     
                 }
 
-                else if (_index < Input.Length && char.IsDigit(Input[_index]))
+                else if (_index < Input.Length && char.IsDigit(Input[_index])) // Check if the character is a digit
                 {
-                    LexNumber();
+                    LexNumber(); 
                     
                 }
 
@@ -100,33 +99,33 @@ namespace ProgrammingLanguagesProject.Components
                                               Input[_index] == '*' ||
                                               Input[_index] == '/' || Input[_index] == '%' || Input[_index] == '!' ||
                                               Input[_index] == '>' ||
-                                              Input[_index] == '<'))
+                                              Input[_index] == '<')) // Check if the character is an operator
                 {
                     LexOperator();
                     
                 }
 
-                else if (_index < Input.Length && (Input[_index] == '(' || Input[_index] == ')'))
+                else if (_index < Input.Length && (Input[_index] == '(' || Input[_index] == ')')) // Check if the character is a parenthesis
                 {
                     LexParenthesis();
                     
                 }
 
-                else if (_index < Input.Length && (Input[_index] == ';' || Input[_index] == ':'))
+                else if (_index < Input.Length && (Input[_index] == ';' || Input[_index] == ':')) // Check if the character is a punctuation
                 {
                     LexPunctuation();
                     
                 }
-                else if (_index < Input.Length)
+                else if (_index < Input.Length) // Invalid character
                 {
                     _tokens.Add(new Token(TokenType.Invalid, Input[_index].ToString()));
-                    _index++;
+                    _index++; // Move to the next character
                 }
                 
                 
             }
 
-            return _tokens;
+            return _tokens; // Return the list of tokens
         }
 
 
@@ -134,15 +133,15 @@ namespace ProgrammingLanguagesProject.Components
 
         private void LexKeywordOrIdentifier()
         {
-            var word = string.Empty;
-            while (_index < Input.Length && (char.IsLetterOrDigit(Input[_index]) || Input[_index] == '_')) 
+            var word = string.Empty; // Initialize an empty string
+            while (_index < Input.Length && (char.IsLetterOrDigit(Input[_index]) || Input[_index] == '_'))  // Loop through the input string
             {
-                word += Input[_index];
-                _index++;
+                word += Input[_index]; // Add the character to the word
+                _index++; // Move to the next character
             }
            
 
-            switch (word)
+            switch (word) // Check if the word is a keyword or an identifier and add the corresponding token
             {
                 case "if":
                     _tokens.Add(new Token(TokenType.If, word));
@@ -170,30 +169,30 @@ namespace ProgrammingLanguagesProject.Components
 
         private void LexNumber()
         {
-            var number = string.Empty;
-            while (_index < Input.Length && char.IsDigit(Input[_index]))
+            var number = string.Empty; // Initialize an empty string
+            while (_index < Input.Length && char.IsDigit(Input[_index])) // Loop through the input string
             {
-                number += Input[_index];
-                _index++;
+                number += Input[_index]; // Add the character to the number
+                _index++; // Move to the next character
             }
 
-            _tokens.Add(new Token(TokenType.Number, number));
-        }
+            _tokens.Add(new Token(TokenType.Number, number)); // Add the number token
+        } 
 
         private void LexOperator()
         {
-            var op = string.Empty;
+            var op = string.Empty; // Initialize an empty string
             while (_index < Input.Length && (Input[_index] == '=' || Input[_index] == '+' || Input[_index] == '-' ||
                                              Input[_index] == '*' ||
                                              Input[_index] == '/' || Input[_index] == '%' || Input[_index] == '!' ||
                                              Input[_index] == '>' ||
-                                             Input[_index] == '<'))
+                                             Input[_index] == '<')) // Loop through the input string
             {
-                op += Input[_index];
-                _index++;
+                op += Input[_index]; // Add the character to the operator
+                _index++; // Move to the next character
             }
 
-            switch (op)
+            switch (op) // Check the operator and add the corresponding token
             {
                 case "=":
                     _tokens.Add(new Token(TokenType.AssignmentOp, op));
@@ -240,10 +239,10 @@ namespace ProgrammingLanguagesProject.Components
 
         private void LexParenthesis()
         {
-            string parenthesis = Input[_index].ToString();
-            _index++;
+            string parenthesis = Input[_index].ToString(); // Get the parenthesis
+            _index++; // Move to the next character
 
-            switch (parenthesis)
+            switch (parenthesis) // Check the parenthesis and add the corresponding token
             {
                 case "(":
                     _tokens.Add(new Token(TokenType.OpenParen, parenthesis));
@@ -260,10 +259,10 @@ namespace ProgrammingLanguagesProject.Components
 
         private void LexPunctuation()
         {
-            string punctuation = Input[_index].ToString();
-            _index++;
+            string punctuation = Input[_index].ToString(); // Get the punctuation
+            _index++; // Move to the next character
 
-            switch (punctuation)
+            switch (punctuation) // Check the punctuation and add the corresponding token
             {
                 case ";":
                     _tokens.Add(new Token(TokenType.Semicolon, punctuation));
